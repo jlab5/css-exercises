@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  display: flex; /*need this to stick footer to the bottom of page*/
+  flex-direction: column; /*need this to stick footer to the bottom of page*/
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -24,4 +27,37 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: auto; /*need this to stick footer to the bottom of page*/
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
